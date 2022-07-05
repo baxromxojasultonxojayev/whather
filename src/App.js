@@ -69,8 +69,8 @@ function App() {
     let day = days[s.getDay()];
     let time = new Date().toLocaleString();
     let date = s.getDate();
-    let month = months[s.getMonth()];
-    let year = s.getFullYear();
+    // let month = months[s.getMonth()];
+    // let year = s.getFullYear();
 
     return `${day}, ${date}, ${time},`;
   };
