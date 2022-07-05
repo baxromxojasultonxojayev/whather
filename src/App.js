@@ -42,7 +42,6 @@ function App() {
   };
 
   const dateBuilder = (s) => {
-    
     let days = [
       "Yakshanba",
       "Dushanba",
@@ -99,17 +98,19 @@ function App() {
         </div>
       </div>
       <div className="panel">
-        <input
-          type="text"
-          className="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search location ...."
-          onKeyPress={searchInput}
-        />
-        <button onClick={searchInput}>
-          <FaSearch />
-        </button>
+        <div>
+          <input
+            type="text"
+            className="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search location ...."
+            onKeyPress={searchInput}
+          />
+          <button className="buttonClick" onClick={searchInput}>
+            <FaSearch />
+          </button>
+        </div>
         <ul className="cities">
           {cities.map((city, index) => (
             <li
