@@ -42,20 +42,7 @@ function App() {
   };
 
   const dateBuilder = (s) => {
-    let months = [
-      "Yanvar",
-      "Fevral",
-      "Mart",
-      "Aprel",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avgust",
-      "Sentabr",
-      "Oktabr",
-      "Noyabr",
-      "Dekabr",
-    ];
+    
     let days = [
       "Yakshanba",
       "Dushanba",
